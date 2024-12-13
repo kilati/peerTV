@@ -7,21 +7,24 @@ import "react-lazy-load-image-component/src/effects/opacity.css";
 import "react-circular-progressbar/dist/styles.css";
 import "react-toastify/dist/ReactToastify.css";
 
-import { StrictMode } from 'react'
+import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
-import { createRoot } from 'react-dom/client'
+import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { store } from "./store/store.ts";
 import { Provider } from "react-redux";
 
 const queryClient = new QueryClient();
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 
-createRoot(document.getElementById('root') as HTMLElement).render(
-    <StrictMode>
+root.render(
+  <BrowserRouter>
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <App />
       </Provider>
     </QueryClientProvider>
-    </StrictMode>,
+  </BrowserRouter>
 );
