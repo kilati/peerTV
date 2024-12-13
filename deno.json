@@ -23,8 +23,11 @@
     "@types/react-dom": "npm:@types/react-dom@^18.3.1",
     "@types/react-lazy-load-image-component": "npm:@types/react-lazy-load-image-component@^1.6.4",
     "@types/react-redux": "npm:@types/react-redux@^7.1.34",
+    "@types/react-router-dom": "npm:@types/react-router-dom@^5.3.3",
     "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.4",
     "autoprefixer": "npm:autoprefixer@^10.4.20",
+    "axios": "npm:axios@^1.7.9",
+    "firebase": "npm:firebase@^11.1.0",
     "postcss": "npm:postcss@^8.4.49",
     "react": "npm:react@^18.3.1",
     "react-circular-progressbar": "npm:react-circular-progressbar@^2.1.0",
@@ -32,11 +35,13 @@
     "react-icons": "npm:react-icons@^5.4.0",
     "react-lazy-load-image-component": "npm:react-lazy-load-image-component@^1.6.2",
     "react-redux": "npm:react-redux@^9.2.0",
+    "react-router-dom": "npm:react-router-dom@^7.0.2",
     "react-toastify": "npm:react-toastify@^10.0.6",
     "swiper": "npm:swiper@^11.1.15",
     "tailwindcss": "npm:tailwindcss@^3.4.16",
     "vite": "npm:vite@^6.0.1"
   },
+  "nodeModulesDir": "auto",
   "deploy": {
     "project": "51cda5b7-dc6b-405a-8beb-73400bf05cd9",
     "exclude": [
